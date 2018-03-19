@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorMuchDisagree">#e7040f</color>
+    <color name="colorDisagree">#ec5e0c</color>
+    <color name="colorMoreOrLess">#f5c517</color>
+    <color name="colorAgree">#0F0</color>
+    <color name="colorMuchAgree">#0022ff</color>
+    <color name="colorTitleQuestion">#1b80bf</color>
+    <color name="colorTextQuestion">#491bbf</color>
+</resources>
