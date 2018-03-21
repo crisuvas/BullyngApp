@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ScrollView
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_question.*
 
 class QuestionActivity : AppCompatActivity(), View.OnClickListener {
@@ -20,6 +21,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
     private var btnMuchAgree: Button? = null
     private var numberQuestion = 1
     private var pointQuestion = 0
+    private var message = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,29 +43,35 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
         btnMuchAgree!!.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
-        for(n in numberQuestion..10){
+        for(n in numberQuestion..9){
             when(v!!.id) {
                 R.id.buttonMuchDisagree -> {
                     pointQuestion += 1
                     numberQuestion++
+                    message = "Nunca"
                 }
                 R.id.buttonDisagree -> {
                     pointQuestion += 2
                     numberQuestion++
+                    message = "Muy rara vez"
                 }
                 R.id.buttonMoreOrLess -> {
                     pointQuestion += 3
                     numberQuestion++
+                    message = "De vez en cuando"
                 }
                 R.id.buttonAgree -> {
                     pointQuestion += 4
                     numberQuestion++
+                    message = "Frecuentemente"
                 }
                 R.id.buttonMuchAgree -> {
                     pointQuestion += 5
                     numberQuestion++
+                    message = "Siempre"
                 }
             }
+            optionChosen()
             readQuestion()
             scrlViewQuestion?.scrollTo(0,0)
             break
@@ -113,5 +121,8 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
                 txtViewQuestionText?.text = getString(R.string.textQuestion10)
             }
         }
+    }
+    private fun optionChosen(){
+        Toast.makeText(this, "Ha seleccionado ${message}", Toast.LENGTH_SHORT).show()
     }
 }

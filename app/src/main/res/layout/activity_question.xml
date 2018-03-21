@@ -6,80 +6,74 @@
     android:layout_height="match_parent"
     tools:context="com.cris.bullyngapp.QuestionActivity">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollViewQuestion"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
-        <ScrollView
-            android:id="@+id/scrollViewQuestion"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewQuestionTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorTitleQuestion"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+            <TextView
+                android:id="@+id/textViewQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorTextQuestion"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_light" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="horizontal"
+                android:scrollbarStyle="insideInset">
 
-                <TextView
-                    android:id="@+id/textViewQuestionTitle"
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/buttonMuchDisagree"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/colorTitleQuestion"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                    android:layout_weight="1"
+                    android:background="@color/colorMuchDisagree" />
 
-                <TextView
-                    android:id="@+id/textViewQuestionText"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/colorTextQuestion"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                    android:textColor="@android:color/background_light" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <Button
+                    android:id="@+id/buttonDisagree"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:scrollbarStyle="insideInset">
+                    android:layout_weight="1"
+                    android:background="@color/colorDisagree" />
 
-                    <Button
-                        android:id="@+id/buttonMuchDisagree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/round_button_muchdissagree" />
+                <Button
+                    android:id="@+id/buttonMoreOrLess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorMoreOrLess" />
 
-                    <Button
-                        android:id="@+id/buttonDisagree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/round_button_disagree" />
+                <Button
+                    android:id="@+id/buttonAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorAgree" />
 
-                    <Button
-                        android:id="@+id/buttonMoreOrLess"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/round_button_moreorless" />
-
-                    <Button
-                        android:id="@+id/buttonAgree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/round_button_agree" />
-
-                    <Button
-                        android:id="@+id/buttonMuchAgree"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/round_button_muchagree" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/buttonMuchAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/colorMuchAgree" />
             </LinearLayout>
+        </LinearLayout>
 
-        </ScrollView>
+    </ScrollView>
 
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
