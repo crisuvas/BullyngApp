@@ -1,5 +1,6 @@
 package com.cris.bullyngapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -43,7 +44,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
         btnMuchAgree!!.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
-        for(n in numberQuestion..9){
+        for(n in numberQuestion..10){
             when(v!!.id) {
                 R.id.buttonMuchDisagree -> {
                     pointQuestion += 1
@@ -72,8 +73,14 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
                 }
             }
             optionChosen()
-            readQuestion()
-            scrlViewQuestion?.scrollTo(0,0)
+            if (numberQuestion != 11){
+                readQuestion()
+                scrlViewQuestion?.scrollTo(0,0)
+            }else{
+                val intent = Intent(this, ResultActivity::class.java)
+                intent.putExtra("totalPoint", pointQuestion)
+                startActivity(intent)
+            }
             break
         }
     }
