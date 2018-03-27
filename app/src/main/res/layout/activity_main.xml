@@ -18,7 +18,6 @@
         android:background="@drawable/boton_redondo_verde"
         android:text="@string/history"
         android:textStyle="italic"
-        android:typeface="R.assets.fonts.Florence_regular.tff"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -44,7 +43,6 @@
         android:background="@drawable/boton_redondo_verde"
         android:text="@string/stories"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion"
-        tools:typeface="R.assets.Florence_regular.tff" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion" />
 
 </android.support.constraint.ConstraintLayout>
