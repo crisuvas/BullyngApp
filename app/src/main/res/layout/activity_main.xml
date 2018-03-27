@@ -4,30 +4,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cris.bullyngapp.MainActivity">
+    tools:context="com.cris.bullyngapp.MainActivity"
+    android:background="@drawable/fondo_azul">
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/boton_redondo_verde"
+        android:text="@string/history"
+        android:textStyle="italic"
+        android:typeface="R.assets.fonts.Florence_regular.tff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/buttonHistory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/history" />
+    <Button
+        android:id="@+id/buttonQuestion"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_redondo_verde"
+        android:text="@string/question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHistory" />
 
-        <Button
-            android:id="@+id/buttonQuestion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/question" />
+    <Button
+        android:id="@+id/buttonStories"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/boton_redondo_verde"
+        android:text="@string/stories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion"
+        tools:typeface="R.assets.Florence_regular.tff" />
 
-        <Button
-            android:id="@+id/buttonStories"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/stories" />
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
