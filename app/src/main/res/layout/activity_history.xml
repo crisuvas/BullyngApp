@@ -29,20 +29,18 @@
 
             <Button
                 android:id="@+id/button"
-                android:layout_width="300dp"
+                android:layout_width="275dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_azul"
                 android:text="@string/bullyingType1" />
 
             <Button
                 android:id="@+id/buttonHistory1"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history1"
@@ -51,10 +49,9 @@
 
             <Button
                 android:id="@+id/buttonHistory2"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history2"
@@ -63,10 +60,9 @@
 
             <Button
                 android:id="@+id/buttonHistory3"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history3"
@@ -75,20 +71,18 @@
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="300dp"
+                android:layout_width="275dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_azul"
                 android:text="@string/bullyingType2" />
 
             <Button
                 android:id="@+id/buttonHistory4"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history4"
@@ -97,10 +91,9 @@
 
             <Button
                 android:id="@+id/buttonHistory5"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history5"
@@ -109,10 +102,9 @@
 
             <Button
                 android:id="@+id/buttonHistory6"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history6"
@@ -121,20 +113,18 @@
 
             <Button
                 android:id="@+id/button3"
-                android:layout_width="300dp"
+                android:layout_width="275dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_azul"
                 android:text="@string/bullyingType3" />
 
             <Button
                 android:id="@+id/buttonHistory7"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history7"
@@ -143,10 +133,9 @@
 
             <Button
                 android:id="@+id/buttonHistory8"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history8"
@@ -155,10 +144,9 @@
 
             <Button
                 android:id="@+id/buttonHistory9"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history9"
@@ -167,20 +155,18 @@
 
             <Button
                 android:id="@+id/button4"
-                android:layout_width="300dp"
+                android:layout_width="275dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginStart="10dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_azul"
                 android:text="@string/bullyingType4" />
 
             <Button
                 android:id="@+id/buttonHistory10"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history10"
@@ -189,10 +175,9 @@
 
             <Button
                 android:id="@+id/buttonHistory11"
-                android:layout_width="250dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history11"
@@ -201,10 +186,9 @@
 
             <Button
                 android:id="@+id/buttonHistory12"
-                android:layout_width="250dp"
+                android:layout_width="225dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="35dp"
-                android:layout_marginStart="35dp"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/boton_redondo_verde"
                 android:text="@string/history12"

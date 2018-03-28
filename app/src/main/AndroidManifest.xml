@@ -20,7 +20,8 @@
         <activity android:name=".StoryActivity" />
         <activity android:name=".HistoryActivity" />
         <activity android:name=".HistoryReaderActivity" />
-        <activity android:name=".ResultActivity"></activity>
+        <activity android:name=".ResultActivity" />
+        <activity android:name=".InstructionActivity"></activity>
     </application>
 
 </manifest>
