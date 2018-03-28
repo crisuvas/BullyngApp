@@ -8,41 +8,47 @@
     android:background="@drawable/fondo_azul">
 
 
-    <Button
-        android:id="@+id/buttonHistory"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/boton_redondo_verde"
-        android:text="@string/history"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/buttonQuestion"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/boton_redondo_verde"
-        android:text="@string/question"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonHistory" />
+        <Button
+            android:id="@+id/buttonHistory"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/boton_redondo_verde"
+            android:text="@string/history"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonStories"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="65dp"
-        android:layout_marginStart="65dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/boton_redondo_verde"
-        android:text="@string/stories"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonQuestion" />
+        <Button
+            android:id="@+id/buttonQuestion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo_verde"
+            android:text="@string/question"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonHistory" />
+
+        <Button
+            android:id="@+id/buttonStories"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boton_redondo_verde"
+            android:text="@string/stories"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonQuestion" />
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
