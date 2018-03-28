@@ -21,19 +21,19 @@ class HistoryReaderActivity : AppCompatActivity() {
         val historyNumber = intent.getIntExtra("historyNumber",0)
         when(historyNumber){
             1 ->{
-                txtViewHistoryTitle?.text = getString(R.string.titleHistory1)
+                txtViewHistoryTitle?.text = getString(R.string.history1)
                 txtViewHistoryText?.text = getString(R.string.textHistory1)
             }
             2 ->{
-                txtViewHistoryTitle?.text = getString(R.string.titleHistory2)
+                txtViewHistoryTitle?.text = getString(R.string.history2)
                 txtViewHistoryText?.text = getString(R.string.textHistory2)
             }
             3 ->{
-                txtViewHistoryTitle?.text = getString(R.string.titleHistory3)
+                txtViewHistoryTitle?.text = getString(R.string.history3)
                 txtViewHistoryText?.text = getString(R.string.textHistory3)
             }
             4 ->{
-                txtViewHistoryTitle?.text = getString(R.string.titleHistory4)
+                txtViewHistoryTitle?.text = getString(R.string.history4)
                 txtViewHistoryText?.text = getString(R.string.textHistory4)
             }
 
