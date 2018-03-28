@@ -36,6 +36,38 @@ class HistoryReaderActivity : AppCompatActivity() {
                 txtViewHistoryTitle?.text = getString(R.string.history4)
                 txtViewHistoryText?.text = getString(R.string.textHistory4)
             }
+            5 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history5)
+                txtViewHistoryText?.text = getString(R.string.textHistory5)
+            }
+            6 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history6)
+                txtViewHistoryText?.text = getString(R.string.textHistory6)
+            }
+            7 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history7)
+                txtViewHistoryText?.text = getString(R.string.textHistory7)
+            }
+            8 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history8)
+                txtViewHistoryText?.text = getString(R.string.textHistory8)
+            }
+            9 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history9)
+                txtViewHistoryText?.text = getString(R.string.textHistory9)
+            }
+            10 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history10)
+                txtViewHistoryText?.text = getString(R.string.textHistory10)
+            }
+            11 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history11)
+                txtViewHistoryText?.text = getString(R.string.textHistory11)
+            }
+            12 ->{
+                txtViewHistoryTitle?.text = getString(R.string.history12)
+                txtViewHistoryText?.text = getString(R.string.textHistory12)
+            }
 
 
 

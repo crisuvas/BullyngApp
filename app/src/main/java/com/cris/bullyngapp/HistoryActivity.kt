@@ -12,6 +12,14 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
     private var btnHistory2: Button? = null
     private var btnHistory3: Button? = null
     private var btnHistory4: Button? = null
+    private var btnHistory5: Button? = null
+    private var btnHistory6: Button? = null
+    private var btnHistory7: Button? = null
+    private var btnHistory8: Button? = null
+    private var btnHistory9: Button? = null
+    private var btnHistory10: Button? = null
+    private var btnHistory11: Button? = null
+    private var btnHistory12: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +28,27 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
         btnHistory2 = findViewById(R.id.buttonHistory2)
         btnHistory3 = findViewById(R.id.buttonHistory3)
         btnHistory4 = findViewById(R.id.buttonHistory4)
+        btnHistory5 = findViewById(R.id.buttonHistory5)
+        btnHistory6 = findViewById(R.id.buttonHistory6)
+        btnHistory7 = findViewById(R.id.buttonHistory7)
+        btnHistory8 = findViewById(R.id.buttonHistory8)
+        btnHistory9 = findViewById(R.id.buttonHistory8)
+        btnHistory10 = findViewById(R.id.buttonHistory10)
+        btnHistory11 = findViewById(R.id.buttonHistory11)
+        btnHistory12 = findViewById(R.id.buttonHistory12)
 
         btnHistory1!!.setOnClickListener(this)
         btnHistory2!!.setOnClickListener(this)
         btnHistory3!!.setOnClickListener(this)
         btnHistory4!!.setOnClickListener(this)
+        btnHistory5!!.setOnClickListener(this)
+        btnHistory6!!.setOnClickListener(this)
+        btnHistory7!!.setOnClickListener(this)
+        btnHistory8!!.setOnClickListener(this)
+        btnHistory9!!.setOnClickListener(this)
+        btnHistory10!!.setOnClickListener(this)
+        btnHistory11!!.setOnClickListener(this)
+        btnHistory12!!.setOnClickListener(this)
 
     }
     override fun onClick(v: View?) {
@@ -44,6 +68,38 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.buttonHistory4 ->{
                 intent.putExtra("historyNumber", 4)
+                startActivity(intent)
+            }
+            R.id.buttonHistory5 ->{
+                intent.putExtra("historyNumber", 5)
+                startActivity(intent)
+            }
+            R.id.buttonHistory6 ->{
+                intent.putExtra("historyNumber", 6)
+                startActivity(intent)
+            }
+            R.id.buttonHistory7 ->{
+                intent.putExtra("historyNumber", 7)
+                startActivity(intent)
+            }
+            R.id.buttonHistory8 ->{
+                intent.putExtra("historyNumber", 8)
+                startActivity(intent)
+            }
+            R.id.buttonHistory9 ->{
+                intent.putExtra("historyNumber", 9)
+                startActivity(intent)
+            }
+            R.id.buttonHistory10 ->{
+                intent.putExtra("historyNumber", 10)
+                startActivity(intent)
+            }
+            R.id.buttonHistory11 ->{
+                intent.putExtra("historyNumber", 11)
+                startActivity(intent)
+            }
+            R.id.buttonHistory12 ->{
+                intent.putExtra("historyNumber", 12)
                 startActivity(intent)
             }
         }
