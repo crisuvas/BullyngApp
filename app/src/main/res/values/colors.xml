@@ -3,6 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorPurple">#f34dc2</color>
+    <color name="colorBlue">#5797d9</color>
+    <color name="colorGreen">#76f88b</color>
     <color name="colorMuchDisagree">#e7040f</color>
     <color name="colorDisagree">#ec5e0c</color>
     <color name="colorMoreOrLess">#f5c517</color>
