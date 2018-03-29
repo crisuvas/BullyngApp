@@ -34,6 +34,7 @@
     <string name="instruction">Instrucciones:</string>
     <string name="instructionText">Este cuestionario se contestará con una barra desplazadora, la cual medirá la frecuencia con que ocurran los sucesos que se preguntarán a continuación</string>
     <string name="start">Avanzar</string>
+    <string name="next">Siguiente</string>
     <string name="titleQuestion1">1Q. Lorem Ipsum</string>
     <string name="titleQuestion2">2Q. Lorem Ipsum</string>
     <string name="titleQuestion3">3Q. Lorem Ipsum</string>

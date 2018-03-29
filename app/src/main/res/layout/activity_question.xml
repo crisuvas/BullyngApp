@@ -4,12 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cris.bullyngapp.QuestionActivity">
+    tools:context="com.cris.bullyngapp.QuestionActivity"
+    android:background="@drawable/fondo_morado">
 
     <ScrollView
         android:id="@+id/scrollViewQuestion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/azul_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,58 +32,79 @@
                 android:id="@+id/textViewQuestionTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorTitleQuestion"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/textViewQuestionText"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/colorTextQuestion"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="@android:color/background_light" />
 
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progress_bar"
+                android:thumb="@drawable/thumb"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:scrollbarStyle="insideInset">
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/buttonMuchDisagree"
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_weight="1"
+                    android:text="@string/never" />
+
+                <TextView
+                    android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/colorMuchDisagree" />
+                    android:foregroundGravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sometimes" />
 
-                <Button
-                    android:id="@+id/buttonDisagree"
+                <TextView
+                    android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
                     android:layout_weight="1"
-                    android:background="@color/colorDisagree" />
+                    android:gravity="end|right"
+                    android:text="@string/ever" />
 
-                <Button
-                    android:id="@+id/buttonMoreOrLess"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorMoreOrLess" />
-
-                <Button
-                    android:id="@+id/buttonAgree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorAgree" />
-
-                <Button
-                    android:id="@+id/buttonMuchAgree"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@color/colorMuchAgree" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/boton_redondo_verde"
+                android:foregroundGravity="center_vertical|center_horizontal|center"
+                android:text="@string/next" />
+
+
+
         </LinearLayout>
 
     </ScrollView>

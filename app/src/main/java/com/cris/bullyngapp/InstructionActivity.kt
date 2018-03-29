@@ -15,10 +15,9 @@ class InstructionActivity : AppCompatActivity(), View.OnClickListener, OnSeekBar
     private var seekbarView: SeekBar? = null
     private var btnStart : Button? = null
 
-    var MIN = 1
-    var MAX = 100
-    var STEP = 1
-    var points = 0
+    private var MIN = 1
+    private var MAX = 100
+    private var STEP = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,7 +35,6 @@ class InstructionActivity : AppCompatActivity(), View.OnClickListener, OnSeekBar
         startActivity(intent)
     }
     override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
-        points = MIN + ( progress * STEP )
     }
     override fun onStartTrackingTouch(seekBar: SeekBar) {
     }
