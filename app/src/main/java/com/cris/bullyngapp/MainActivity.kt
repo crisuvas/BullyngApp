@@ -27,13 +27,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
     override fun onClick(v: View?) {
         val intentHistoryActivity = Intent(this, HistoryActivity::class.java) //declaración a HistoryActivity
-        val intentQuestionActivity = Intent(this, QuestionActivity::class.java) //declaración a QuestionActivity
+        val intentInstructionActivity = Intent(this, InstructionActivity::class.java) //declaración a QuestionActivity
         val intentStoryActivity = Intent(this, StoryActivity::class.java) //declaración a StoryActivity
         when(v!!.id){
             R.id.buttonHistory ->
                 startActivity(intentHistoryActivity)
             R.id.buttonQuestion ->
-                startActivity(intentQuestionActivity)
+                startActivity(intentInstructionActivity)
             R.id.buttonStories ->
                 startActivity(intentStoryActivity)
         }
