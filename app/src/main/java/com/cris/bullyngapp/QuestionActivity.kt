@@ -6,17 +6,24 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.ScrollView
+import android.widget.SeekBar
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_question.*
 
-class QuestionActivity : AppCompatActivity(), View.OnClickListener {
+class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSeekBarChangeListener {
+
 
     private var scrlViewQuestion: ScrollView? = null
     private var txtViewQuestionTitle: TextView? = null
     private var txtViewQuestionText: TextView? = null
+    private var seekBarview: SeekBar? = null
     private var btnNext: Button? = null
     private var numberQuestion = 1
     private var pointQuestion = 0
+    private var points = 0
+    private var min = 0
+    private var max = 100
+    private var step = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,13 +32,17 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
         txtViewQuestionTitle = findViewById(R.id.textViewQuestionTitle)
         txtViewQuestionText = findViewById(R.id.textViewQuestionText)
         btnNext = findViewById(R.id.buttonNext)
+        seekBarview = findViewById(R.id.seekBar)
+
+        seekBarview!!.max = (max - min)/step
+        seekBarview!!.setOnSeekBarChangeListener(this)
 
         readQuestion()
         btnNext!!.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
         for(n in numberQuestion..10){
-            pointQuestion +=1
+            pointQuestion += points
             numberQuestion++
 
             if (numberQuestion != 11){
@@ -89,5 +100,12 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener {
                 txtViewQuestionText?.text = getString(R.string.textQuestion10)
             }
         }
+    }
+    override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
+        points = min + ( progress * step )
+    }
+    override fun onStartTrackingTouch(seekBar: SeekBar) {
+    }
+    override fun onStopTrackingTouch(seekBar: SeekBar) {
     }
 }
