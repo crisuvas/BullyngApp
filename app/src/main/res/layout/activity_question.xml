@@ -11,17 +11,7 @@
         android:id="@+id/scrollViewQuestion"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/azul_fondo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="30dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,31 +22,34 @@
                 android:id="@+id/textViewQuestionTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="20dp"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:paddingTop="20dp"
+                android:paddingStart="20dp"
+                android:text="@string/titleQuestion15"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/textViewQuestionText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingStart="20dp"
-                android:paddingLeft="20dp"
-                android:paddingRight="20dp"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:textColor="@android:color/background_light" />
+                android:text="@string/textQuestion15"
+                android:textColor="@android:color/background_light"
+                android:background="@drawable/azul_fondo"
+                android:paddingBottom="45dp"
+                android:paddingTop="45dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="25dp"/>
 
             <SeekBar
                 android:id="@+id/seekBar"
                 android:layout_width="match_parent"
-                android:padding="15dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
                 android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:progressDrawable="@drawable/progress_bar"
-                android:thumb="@drawable/thumb"/>
+                android:thumb="@drawable/thumb" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -67,8 +60,6 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginStart="30dp"
                     android:layout_weight="1"
                     android:text="@string/never" />
 
@@ -85,8 +76,6 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:layout_weight="1"
                     android:gravity="end|right"
                     android:text="@string/ever" />
@@ -102,7 +91,6 @@
                 android:background="@drawable/boton_redondo_verde"
                 android:foregroundGravity="center_vertical|center_horizontal|center"
                 android:text="@string/next" />
-
 
 
         </LinearLayout>

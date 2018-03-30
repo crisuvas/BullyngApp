@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.ScrollView
 import android.widget.SeekBar
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_question.*
 
 class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSeekBarChangeListener {
 
@@ -35,18 +34,20 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
         seekBarview = findViewById(R.id.seekBar)
 
         seekBarview!!.max = (max - min)/step
+        seekBarview!!.progress = 50
         seekBarview!!.setOnSeekBarChangeListener(this)
 
         readQuestion()
         btnNext!!.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
-        for(n in numberQuestion..10){
+        for(n in numberQuestion..25){
             pointQuestion += points
             numberQuestion++
 
-            if (numberQuestion != 11){
+            if (numberQuestion != 26){
                 readQuestion()
+                seekBarview!!.progress = 50
                 scrlViewQuestion?.scrollTo(0,0)
             }else{
                 val intent = Intent(this, ResultActivity::class.java)
@@ -61,7 +62,6 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
             1 ->{
                 txtViewQuestionTitle?.text = getString(R.string.titleQuestion1)
                 txtViewQuestionText?.text = getString(R.string.textQuestion1)
-
             }
             2 ->{
                 txtViewQuestionTitle?.text = getString(R.string.titleQuestion2)
@@ -98,6 +98,66 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
             10 ->{
                 txtViewQuestionTitle?.text = getString(R.string.titleQuestion10)
                 txtViewQuestionText?.text = getString(R.string.textQuestion10)
+            }
+            11 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion11)
+                txtViewQuestionText?.text = getString(R.string.textQuestion11)
+            }
+            12 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion12)
+                txtViewQuestionText?.text = getString(R.string.textQuestion12)
+            }
+            13 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion13)
+                txtViewQuestionText?.text = getString(R.string.textQuestion13)
+            }
+            14 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion14)
+                txtViewQuestionText?.text = getString(R.string.textQuestion14)
+            }
+            15 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion15)
+                txtViewQuestionText?.text = getString(R.string.textQuestion15)
+            }
+            16 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion16)
+                txtViewQuestionText?.text = getString(R.string.textQuestion16)
+            }
+            17 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion17)
+                txtViewQuestionText?.text = getString(R.string.textQuestion17)
+            }
+            18 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion18)
+                txtViewQuestionText?.text = getString(R.string.textQuestion18)
+            }
+            19 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion19)
+                txtViewQuestionText?.text = getString(R.string.textQuestion19)
+            }
+            20 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion20)
+                txtViewQuestionText?.text = getString(R.string.textQuestion20)
+            }
+            21 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion21)
+                txtViewQuestionText?.text = getString(R.string.textQuestion21)
+            }
+            22 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion22)
+                txtViewQuestionText?.text = getString(R.string.textQuestion22)
+            }
+            23 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion23)
+                txtViewQuestionText?.text = getString(R.string.textQuestion23)
+            }
+            24 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion24)
+                txtViewQuestionText?.text = getString(R.string.textQuestion24)
+            }
+            25 ->{
+                txtViewQuestionTitle?.text = getString(R.string.titleQuestion25)
+                txtViewQuestionText?.text = getString(R.string.textQuestion25)
             }
         }
     }
