@@ -27,6 +27,7 @@ class InstructionActivity : AppCompatActivity(), View.OnClickListener, OnSeekBar
         seekbarView = this.seekbar
 
         seekbarView!!.max = (MAX - MIN) / STEP
+        seekbarView!!.progress = 33
         seekbarView!!.setOnSeekBarChangeListener(this)
         btnStart!!.setOnClickListener(this)
     }

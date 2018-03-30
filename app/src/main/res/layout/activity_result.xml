@@ -43,11 +43,13 @@
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
                 android:text="@string/kind" />
+
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight=".5"
+                android:gravity="center_horizontal"
                 android:text="@string/percentage" />
 
         </LinearLayout>
@@ -67,7 +69,8 @@
                 android:id="@+id/textViewVerbal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight=".5" />
+                android:layout_weight=".5"
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 
@@ -86,7 +89,8 @@
                 android:id="@+id/textViewPsicology"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight=".5"/>
+                android:layout_weight=".5"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
@@ -105,7 +109,8 @@
                 android:id="@+id/textViewPhysic"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight=".5"/>
+                android:layout_weight=".5"
+                android:gravity="center_horizontal"/>
 
         </LinearLayout>
 
