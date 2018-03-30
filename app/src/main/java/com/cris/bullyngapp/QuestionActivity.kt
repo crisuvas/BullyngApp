@@ -19,6 +19,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
     private var btnNext: Button? = null
     private var numberQuestion = 1
     private var pointQuestion = 0
+    private var arrayPoints = IntArray(4)
     private var points = 0
     private var min = 0
     private var max = 100
@@ -41,17 +42,37 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
         btnNext!!.setOnClickListener(this)
     }
     override fun onClick(v: View?) {
-        for(n in numberQuestion..25){
+        for(n in numberQuestion..20){
+
             pointQuestion += points
             numberQuestion++
 
-            if (numberQuestion != 26){
+            when(numberQuestion) {
+                6 -> {
+                    arrayPoints[0] = pointQuestion
+                    pointQuestion = 0
+                }
+                11 -> {
+                    arrayPoints[1] = pointQuestion
+                    pointQuestion = 0
+                }
+                16 -> {
+                    arrayPoints[2] = pointQuestion
+                    pointQuestion = 0
+                }
+                21 -> {
+                    arrayPoints[3] = pointQuestion
+                    pointQuestion = 0
+                }
+            }
+
+                if (numberQuestion != 21){
                 readQuestion()
                 seekBarview!!.progress = 50
                 scrlViewQuestion?.scrollTo(0,0)
             }else{
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("totalPoint", pointQuestion)
+                intent.putExtra("totalPoint", arrayPoints)
                 startActivity(intent)
             }
             break
@@ -138,26 +159,6 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
             20 ->{
                 txtViewQuestionTitle?.text = getString(R.string.titleQuestion20)
                 txtViewQuestionText?.text = getString(R.string.textQuestion20)
-            }
-            21 ->{
-                txtViewQuestionTitle?.text = getString(R.string.titleQuestion21)
-                txtViewQuestionText?.text = getString(R.string.textQuestion21)
-            }
-            22 ->{
-                txtViewQuestionTitle?.text = getString(R.string.titleQuestion22)
-                txtViewQuestionText?.text = getString(R.string.textQuestion22)
-            }
-            23 ->{
-                txtViewQuestionTitle?.text = getString(R.string.titleQuestion23)
-                txtViewQuestionText?.text = getString(R.string.textQuestion23)
-            }
-            24 ->{
-                txtViewQuestionTitle?.text = getString(R.string.titleQuestion24)
-                txtViewQuestionText?.text = getString(R.string.textQuestion24)
-            }
-            25 ->{
-                txtViewQuestionTitle?.text = getString(R.string.titleQuestion25)
-                txtViewQuestionText?.text = getString(R.string.textQuestion25)
             }
         }
     }
