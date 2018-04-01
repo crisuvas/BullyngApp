@@ -83,9 +83,9 @@
     <string name="result">Resultados:</string>
     <string name="kind">Tipo de Bullying</string>
     <string name="percentage">Porcentaje</string>
-    <string name="verbal">Verbal</string>
-    <string name="psicology">Psicológico</string>
-    <string name="Phisyc">Físico</string>
-    <string name="social">Social</string>
+    <string name="verbal">Verbal:</string>
+    <string name="psicology">Psicológico:</string>
+    <string name="Phisyc">Físico:</string>
+    <string name="social">Social:</string>
     <string name="recomendation">Recomendaciones:</string>
 </resources>

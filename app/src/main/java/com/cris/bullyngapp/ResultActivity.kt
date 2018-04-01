@@ -25,10 +25,10 @@ class ResultActivity : AppCompatActivity() {
     }
     fun givePoints(){
         points = intent.getIntArrayExtra("totalPoint")
-        txtViewVerbal?.text = "${points[0]} %"
-        txtViewPsicology?.text = "${points[1]} %"
-        txtViewPhysic?.text = "${points[2]} %"
-        txtViewSocial?.text = "${points[3]} %"
+        txtViewVerbal?.text = "${points[0]/5} %"
+        txtViewPsicology?.text = "${points[1]/5} %"
+        txtViewPhysic?.text = "${points[2]/5} %"
+        txtViewSocial?.text = "${points[3]/5} %"
     }
     fun description(){
     }
