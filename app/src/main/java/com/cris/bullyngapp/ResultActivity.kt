@@ -10,6 +10,7 @@ class ResultActivity : AppCompatActivity() {
     private var txtViewPhysic: TextView? = null
     private var txtViewSocial: TextView? = null
     private var txtViewDescription: TextView? = null
+
     private var points = IntArray(4)
 
     override fun onCreate(savedInstanceState: Bundle?) {
