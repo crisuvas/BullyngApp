@@ -26,17 +26,19 @@
                 android:paddingRight="20dp"
                 android:paddingStart="20dp"
                 android:text="@string/titleQuestion15"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/colorPurple"/>
 
             <TextView
                 android:id="@+id/textViewQuestionText"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                android:text="@string/textQuestion15"
-                android:textColor="@android:color/background_light"
+                android:layout_height="130dp"
                 android:background="@drawable/azul_fondo"
-                android:padding="10dp"/>
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="10dp"
+                android:text="@string/textQuestion15"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/background_light" />
 
             <SeekBar
                 android:id="@+id/seekBar"
@@ -72,7 +74,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="end|right"
+                    android:gravity="right|end"
                     android:text="@string/ever" />
 
             </LinearLayout>

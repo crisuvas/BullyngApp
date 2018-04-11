@@ -16,13 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuestionActivity" />
-        <activity android:name=".StoryActivity" />
-        <activity android:name=".HistoryActivity" />
-        <activity android:name=".HistoryReaderActivity" />
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".InstructionActivity" />
-        <activity android:name=".AboutActivity"/>
+        <activity
+            android:name=".QuestionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".HistoryActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".HistoryReaderActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".ResultActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".InstructionActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".AboutActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
     </application>
 
 </manifest>
