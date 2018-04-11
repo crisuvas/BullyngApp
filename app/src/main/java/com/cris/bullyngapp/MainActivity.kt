@@ -5,37 +5,47 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
 
-    private var btnHistory: Button? = null
-    private var btnQuestion: Button? = null
-    private var btnStories: Button? = null
+    private var imgAbout: ImageView? = null
+    private var imgHistory: ImageView? = null
+    private var imgQuestion: ImageView? = null
+    private var imgMotivation: ImageView? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        btnHistory = findViewById(R.id.buttonHistory)
-        btnQuestion = findViewById(R.id.buttonQuestion)
-        btnStories = findViewById(R.id.buttonStories)
+        imgAbout = findViewById(R.id.imageViewAbout)
+        imgHistory = findViewById(R.id.imageViewHistory)
+        imgQuestion = findViewById(R.id.imageViewQuestion)
+        imgMotivation = findViewById(R.id.imageViewMotivation)
 
-        btnHistory!!.setOnClickListener(this)
-        btnQuestion!!.setOnClickListener(this)
-        btnStories!!.setOnClickListener(this)
+        imgAbout!!.setOnClickListener(this)
+        imgHistory!!.setOnClickListener(this)
+        imgQuestion!!.setOnClickListener(this)
+        imgMotivation!!.setOnClickListener(this)
 
     }
+
     override fun onClick(v: View?) {
+
+        //private val intentAboutActivity = Intent(this, AboutActivity::class.java) //declaración a StoryActivity
         val intentHistoryActivity = Intent(this, HistoryActivity::class.java) //declaración a HistoryActivity
         val intentInstructionActivity = Intent(this, InstructionActivity::class.java) //declaración a QuestionActivity
-        val intentStoryActivity = Intent(this, StoryActivity::class.java) //declaración a StoryActivity
+       // private val intentMotivationActivity = Intent(this,MotivationActivity::class.java)
         when(v!!.id){
-            R.id.buttonHistory ->
+            /*R.id.imageViewAbout ->
+                startActivity(intentAboutActivity)*/
+            R.id.imageViewHistory ->
                 startActivity(intentHistoryActivity)
-            R.id.buttonQuestion ->
+            R.id.imageViewQuestion ->
                 startActivity(intentInstructionActivity)
-            R.id.buttonStories ->
-                startActivity(intentStoryActivity)
+            /*R.id.imageViewMotivation ->
+                startActivity(intentMotivationActivity)*/
         }
     }
 }
