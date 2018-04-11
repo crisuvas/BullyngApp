@@ -8,194 +8,244 @@
     android:background="@drawable/fondo_azul">
 
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="22dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginRight="28dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:weightSum="1">
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="275dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_azul"
-                android:text="@string/bullyingType1" />
+            <ImageView
+                android:id="@id/imageViewAbout"
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:layout_weight=".25"
+                android:background="@color/colorBlue"
+                android:contentDescription="@string/about"
+                app:srcCompat="@drawable/ic_launcher_help" />
 
-            <Button
-                android:id="@+id/buttonHistory1"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@id/imageViewHistory"
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:layout_weight=".25"
+                android:background="@color/colorBlue"
+                android:contentDescription="@string/history"
+                app:srcCompat="@drawable/ic_launcher_action" />
 
-            <Button
-                android:id="@+id/buttonHistory2"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+            <ImageView
+                android:id="@id/imageViewQuestion"
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:layout_weight=".25"
+                android:background="@color/colorBlue"
+                android:contentDescription="@string/question"
+                app:srcCompat="@drawable/ic_launcher_question" />
 
-            <Button
-                android:id="@+id/buttonHistory3"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history3"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="275dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_azul"
-                android:text="@string/bullyingType2" />
-
-            <Button
-                android:id="@+id/buttonHistory4"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory5"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory6"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history6"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="275dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_azul"
-                android:text="@string/bullyingType3" />
-
-            <Button
-                android:id="@+id/buttonHistory7"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory8"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history8"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory9"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history9"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="275dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_azul"
-                android:text="@string/bullyingType4" />
-
-            <Button
-                android:id="@+id/buttonHistory10"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history10"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory11"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history11"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
-
-            <Button
-                android:id="@+id/buttonHistory12"
-                android:layout_width="225dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/boton_redondo_verde"
-                android:text="@string/history12"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+            <ImageView
+                android:id="@id/imageViewMotivation"
+                android:layout_width="90dp"
+                android:layout_height="65dp"
+                android:layout_weight=".25"
+                android:background="@color/colorBlue"
+                android:contentDescription="@string/motivation"
+                app:srcCompat="@drawable/ic_launcher_motivational" />
 
         </LinearLayout>
-    </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="22dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_weight=".25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_azul"
+                    android:text="@string/bullyingType1" />
+
+                <Button
+                    android:id="@+id/buttonHistory1"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/buttonHistory2"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory3"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_azul"
+                    android:text="@string/bullyingType2" />
+
+                <Button
+                    android:id="@+id/buttonHistory4"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory5"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory6"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history6"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_azul"
+                    android:text="@string/bullyingType3" />
+
+                <Button
+                    android:id="@+id/buttonHistory7"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history7"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory8"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history8"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory9"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history9"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_azul"
+                    android:text="@string/bullyingType4" />
+
+                <Button
+                    android:id="@+id/buttonHistory10"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory11"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history11"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+                <Button
+                    android:id="@+id/buttonHistory12"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/boton_redondo_verde"
+                    android:text="@string/history12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttonHistory1" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
