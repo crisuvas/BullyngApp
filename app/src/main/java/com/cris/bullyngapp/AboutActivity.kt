@@ -6,18 +6,16 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
-
+class AboutActivity : AppCompatActivity(), View.OnClickListener {
 
     private var imgAbout: ImageView? = null
     private var imgHistory: ImageView? = null
     private var imgQuestion: ImageView? = null
     private var imgMotivation: ImageView? = null
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_about)
         imgAbout = findViewById(R.id.imageViewAbout)
         imgHistory = findViewById(R.id.imageViewHistory)
         imgQuestion = findViewById(R.id.imageViewQuestion)
@@ -27,7 +25,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         imgHistory!!.setOnClickListener(this)
         imgQuestion!!.setOnClickListener(this)
         imgMotivation!!.setOnClickListener(this)
-
     }
 
     override fun onClick(v: View?) {
@@ -35,7 +32,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val intentAboutActivity = Intent(this, AboutActivity::class.java)
         val intentHistoryActivity = Intent(this, HistoryActivity::class.java)
         val intentInstructionActivity = Intent(this, InstructionActivity::class.java)
-       // private val intentMotivationActivity = Intent(this,MotivationActivity::class.java)
+        // private val intentMotivationActivity = Intent(this,MotivationActivity::class.java)
+
         when(v!!.id){
             R.id.imageViewAbout ->
                 startActivity(intentAboutActivity)
@@ -43,8 +41,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intentHistoryActivity)
             R.id.imageViewQuestion ->
                 startActivity(intentInstructionActivity)
-            /*R.id.imageViewMotivation ->
-                startActivity(intentMotivationActivity)*/
+        /*R.id.imageViewMotivation ->
+            startActivity(intentMotivationActivity)*/
         }
     }
 }

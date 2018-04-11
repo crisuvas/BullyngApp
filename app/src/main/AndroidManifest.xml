@@ -21,7 +21,8 @@
         <activity android:name=".HistoryActivity" />
         <activity android:name=".HistoryReaderActivity" />
         <activity android:name=".ResultActivity" />
-        <activity android:name=".InstructionActivity"></activity>
+        <activity android:name=".InstructionActivity" />
+        <activity android:name=".AboutActivity"/>
     </application>
 
 </manifest>
