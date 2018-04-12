@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cris.bullyngapp.HistoryReaderActivity"
-    android:background="@drawable/fondo_verde">
+    android:background="@color/colorGreen">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,16 +29,16 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:textColor="@color/colorPurple"
+                android:text="@string/history1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
             <TextView
                 android:id="@+id/textViewHistoryText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="25dp"
-                android:background="@drawable/azul_fondo"
+                android:text="@string/textHistory1"
                 android:padding="10dp"
-                android:textColor="#ffffff" />
+                android:textColor="#000" />
         </LinearLayout>
     </ScrollView>
 
