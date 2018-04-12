@@ -5,8 +5,14 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 
 class HistoryActivity : AppCompatActivity(), View.OnClickListener {
+
+    private var imgAbout: ImageView? = null
+    private var imgHistory: ImageView? = null
+    private var imgQuestion: ImageView? = null
+    private var imgMotivation: ImageView? = null
 
     private var btnHistory1: Button? = null
     private var btnHistory2: Button? = null
@@ -24,6 +30,16 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
+        imgAbout = findViewById(R.id.imageViewAbout)
+        imgHistory = findViewById(R.id.imageViewHistory)
+        imgQuestion = findViewById(R.id.imageViewQuestion)
+        imgMotivation = findViewById(R.id.imageViewMotivation)
+
+        imgAbout!!.setOnClickListener(this)
+        imgHistory!!.setOnClickListener(this)
+        imgQuestion!!.setOnClickListener(this)
+        imgMotivation!!.setOnClickListener(this)
+
         btnHistory1 = findViewById(R.id.buttonHistory1)
         btnHistory2 = findViewById(R.id.buttonHistory2)
         btnHistory3 = findViewById(R.id.buttonHistory3)
@@ -53,6 +69,10 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
     }
     override fun onClick(v: View?) {
         val intent = Intent(this, HistoryReaderActivity::class.java)
+        val intentAboutActivity = Intent(this, AboutActivity::class.java)
+        val intentHistoryActivity = Intent(this, HistoryActivity::class.java)
+        val intentInstructionActivity = Intent(this, InstructionActivity::class.java)
+
         when(v!!.id){
             R.id.buttonHistory1 ->{
                 intent.putExtra("historyNumber", 1)
@@ -102,6 +122,15 @@ class HistoryActivity : AppCompatActivity(), View.OnClickListener {
                 intent.putExtra("historyNumber", 12)
                 startActivity(intent)
             }
+            R.id.imageViewAbout ->
+                startActivity(intentAboutActivity)
+            R.id.imageViewHistory ->
+                startActivity(intentHistoryActivity)
+            R.id.imageViewQuestion ->
+                startActivity(intentInstructionActivity)
+        /*R.id.imageViewMotivation ->
+            startActivity(intentMotivationActivity)*/
+
         }
 
     }
