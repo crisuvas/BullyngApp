@@ -58,7 +58,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#40e28c">
+            android:background="#fff">
 
 
             <LinearLayout
@@ -69,389 +69,388 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#fff"
                     android:gravity="center_horizontal"
                     android:text="@string/what"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#00f" />
+                    android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText1"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutTitle2"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#fff" />
+                    android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText4"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText5"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText6"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText7"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText8"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText9"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutTitle3"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText10"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText11"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText12"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText13"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutTitle4"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText14"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText15"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText16"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText17"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText18"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText19"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText20"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText21"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText22"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText23"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText24"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText25"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText26"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText27"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText28"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText29"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText30"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText31"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText32"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText33"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText34"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutTitle5"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText36"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText37"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText38"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText39"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText40"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText41"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText42"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText43"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText44"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText45"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText46"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText47"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText48"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutTitle6"
                     android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText49"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/aboutText50"
                     android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
             </LinearLayout>
         </ScrollView>
 

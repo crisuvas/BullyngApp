@@ -18,7 +18,8 @@
         </activity>
         <activity
             android:name=".QuestionActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity android:name=".HistoryActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
@@ -26,7 +27,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".ResultActivity"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".InstructionActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
