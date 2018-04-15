@@ -101,12 +101,12 @@
     <string name="what">¿Qué es el Bullying?</string>
     <!--ABOUT TEXTS-->
     <string name="aboutTitle1">¿Qué es el Bullying o acoso escolar?</string>
-    <string name="aboutText1">El bullying es aquel maltrato el cual suele ser físico o psicológico que un acosador le puede infringir a nuestros hijos dentro de las escuelas, es más normal que lo veamos entre iguales (de la misma escuela, comunidad, o lugar donde se ejerza una actividad). Cabe destacar que se puede empezar a ver desde las aulas infantiles, donde los estudiantes suelen tener edad entre 3 a 6 años.</string>
+    <string name="aboutText1">El bullying es aquel maltrato el cual suele ser <b>físico</b> o <b>psicológico</b> que un acosador le puede infringir <b>a nuestros hijos</b> dentro de las escuelas, es más normal que lo veamos entre iguales (de la misma escuela, comunidad, o lugar donde se ejerza una actividad). Cabe destacar que se puede empezar a ver desde las aulas infantiles, donde los estudiantes suelen tener edad <b>entre 3 a 6 años</b>.</string>
     <string name="aboutText2">\n\tEste comportamiento se ve caracterizado por la continua repetición de hostigamiento del agresor hacia la víctima. Pudiendo llegar a ser cada vez más fuerte, en donde incluso han llegado a verse casos donde la víctima suele ser asesinada por el agresor.</string>
-    <string name="aboutText3">\n\tViéndolo desde el punto de vista de nuestros hijos, al ser tratados de esta forma, suelen sentirse avergonzados, haciendo que ello mismo sea la causa principal del por qué no les suelen contar a sus padres, aunque también puede verse a causa del miedo que le tienen al acosador.</string>
+    <string name="aboutText3">\n\tViéndolo desde el punto de vista de nuestros hijos, al ser tratados de esta forma, <b>suelen sentirse avergonzados</b>>, haciendo que ello mismo sea la causa principal del por qué no les suelen contar a sus padres, aunque también puede verse a causa del <b>miedo</b> que le tienen al acosador.</string>
     <string name="aboutTitle2">\nCaracterísticas de una víctima de Bullying:</string>
-    <string name="aboutText4">\n-Suelen ser acciones de diferente naturaleza (burlas, agresiones físicas, amenazas, alejar a la otra persona, etc.).</string>
-    <string name="aboutText5">-Este origina problemas que se repiten y alargan a través de un cierto tiempo.</string>
+    <string name="aboutText4">\n-Suelen ser acciones de diferente naturaleza <i>(burlas, agresiones físicas, amenazas, alejar a la otra persona, etc.)</i>.</string>
+    <string name="aboutText5">-Este origina problemas que se <b>repiten</b> y alargan a través de un <b>cierto tiempo</b></string>
     <string name="aboutText6">-Puede ser provocado por un alumno, o persona que se conviva, en contra de una persona indefensa (víctima).</string>
     <string name="aboutText7">-Es sostenido por la ignorancia o pasividad de las personas que ven o viven el suceso.</string>
     <string name="aboutText8">-La victima pierde confianza en sí y los demás, y baja su rendimiento escolar.</string>
