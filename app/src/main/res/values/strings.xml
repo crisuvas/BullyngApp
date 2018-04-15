@@ -99,6 +99,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="what">¿Qué es el Bullying?</string>
+    <string name="name">Nombre</string>
+    <string name="bullying">Bullying</string>
     <!--ABOUT TEXTS-->
     <string name="aboutTitle1">¿Qué es el Bullying o acoso escolar?</string>
     <string name="aboutText1">El bullying es aquel maltrato el cual suele ser <b>físico</b> o <b>psicológico</b> que un acosador le puede infringir <b>a nuestros hijos</b> dentro de las escuelas, es más normal que lo veamos entre iguales (de la misma escuela, comunidad, o lugar donde se ejerza una actividad). Cabe destacar que se puede empezar a ver desde las aulas infantiles, donde los estudiantes suelen tener edad <b>entre 3 a 6 años</b>.</string>
