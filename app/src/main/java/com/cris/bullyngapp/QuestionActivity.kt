@@ -34,7 +34,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
         seekBarview = findViewById(R.id.seekBar)
 
         seekBarview!!.max = (max - min)/step
-        seekBarview!!.progress = 33
+        seekBarview!!.progress = 0
         seekBarview!!.setOnSeekBarChangeListener(this)
 
         readQuestion()
@@ -48,7 +48,7 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
 
                 if (numberQuestion != 21){
                 readQuestion()
-                seekBarview!!.progress = 33
+                seekBarview!!.progress = 0
                 scrlViewQuestion?.scrollTo(0,0)
             }else{
                 val intent = Intent(this, ResultActivity::class.java)
