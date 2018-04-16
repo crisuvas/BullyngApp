@@ -19,7 +19,6 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
     private var btnNext: Button? = null
     private var numberQuestion = 1
     private var pointQuestion = 0
-    private var arrayPoints = IntArray(4)
     private var points = 0
     private var min = 0
     private var max = 100
@@ -47,32 +46,13 @@ class QuestionActivity : AppCompatActivity(), View.OnClickListener, SeekBar.OnSe
             pointQuestion += points
             numberQuestion++
 
-            when(numberQuestion) {
-                6 -> {
-                    arrayPoints[0] = pointQuestion
-                    pointQuestion = 0
-                }
-                11 -> {
-                    arrayPoints[1] = pointQuestion
-                    pointQuestion = 0
-                }
-                16 -> {
-                    arrayPoints[2] = pointQuestion
-                    pointQuestion = 0
-                }
-                21 -> {
-                    arrayPoints[3] = pointQuestion
-                    pointQuestion = 0
-                }
-            }
-
                 if (numberQuestion != 21){
                 readQuestion()
                 seekBarview!!.progress = 33
                 scrlViewQuestion?.scrollTo(0,0)
             }else{
                 val intent = Intent(this, ResultActivity::class.java)
-                intent.putExtra("totalPoint", arrayPoints)
+                intent.putExtra("totalPoint", pointQuestion)
                 startActivity(intent)
             }
             break

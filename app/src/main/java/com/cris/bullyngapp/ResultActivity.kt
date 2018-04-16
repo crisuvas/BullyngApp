@@ -5,31 +5,22 @@ import android.os.Bundle
 import android.widget.TextView
 
 class ResultActivity : AppCompatActivity() {
-    private var txtViewVerbal: TextView? = null
-    private var txtViewPsicology: TextView? = null
-    private var txtViewPhysic: TextView? = null
-    private var txtViewSocial: TextView? = null
+    private var tatViewPercentage: TextView? = null
     private var txtViewDescription: TextView? = null
 
-    private var points = IntArray(4)
+    private var points = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
-        txtViewVerbal = findViewById(R.id.textViewVerbal)
-        txtViewPsicology = findViewById(R.id.textViewPsicology)
-        txtViewPhysic = findViewById(R.id.textViewPhysic)
-        txtViewSocial = findViewById(R.id.textViewSocial)
+        tatViewPercentage = findViewById(R.id.textViewPercentage)
         txtViewDescription = findViewById(R.id.textViewDescription)
         givePoints()
         description()
     }
     fun givePoints(){
-        points = intent.getIntArrayExtra("totalPoint")
-        txtViewVerbal?.text = "${points[0]/5} %"
-        txtViewPsicology?.text = "${points[1]/5} %"
-        txtViewPhysic?.text = "${points[2]/5} %"
-        txtViewSocial?.text = "${points[3]/5} %"
+        points = intent.getIntExtra("totalPoint",0)
+        tatViewPercentage?.text = "${points}/20 %"
     }
     fun description(){
     }
