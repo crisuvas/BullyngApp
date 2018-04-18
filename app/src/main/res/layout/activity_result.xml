@@ -83,7 +83,6 @@
                 android:text="@string/exampleText"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="#000" />
-
         </LinearLayout>
 
         <TextView

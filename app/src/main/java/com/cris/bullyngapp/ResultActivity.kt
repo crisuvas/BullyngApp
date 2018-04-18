@@ -65,6 +65,5 @@ class ResultActivity : AppCompatActivity(), View.OnClickListener {
             R.id.buttonRestart ->
                     startActivity(intent)
         }
-
     }
 }
