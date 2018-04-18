@@ -157,4 +157,6 @@
     <string name="aboutTitle6">\nBuscar ayuda:</string>
     <string name="aboutText49">-Si nuestro hijo muestra alguno de los cambios antes descritos, debemos acudir a la escuela y hablar con el tutor o director de la institución. Él nos podrá ayudar a buscar soluciones profesionales para resolver el caso.</string>
     <string name="aboutText50">-También es recomendable tener buena comunicación con la escuela para poder tener confianza con la misma y, en caso de necesitarse, pedir su apoyo con mayor facilidad y detectar de manera más obvia si nuestro hijo sufre o no este tipo de acoso.</string>
+    <string name="exampleText">Texto de prueba</string>
+    <string name="restart">Volver al inicio</string>
 </resources>

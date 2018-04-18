@@ -80,7 +80,7 @@
                 android:layout_height="70dp"
                 android:layout_weight=".5"
                 android:gravity="center"
-                android:text="50%"
+                android:text="@string/exampleText"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="#000" />
 
@@ -98,8 +98,16 @@
             android:id="@+id/textViewDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rellenar esto con algo"
+            android:text="@string/exampleText"
             android:textColor="#000"/>
+
+        <Button
+            android:id="@+id/buttonRestart"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/restart"
+            android:background="@drawable/boton_redondo_verde"/>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

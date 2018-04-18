@@ -1,13 +1,18 @@
 package com.cris.bullyngapp
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.TextView
 
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : AppCompatActivity(), View.OnClickListener {
+
     private var txtViewPercentage: TextView? = null
     private var txtViewDescription: TextView? = null
     private var txtViewBullyingLevel: TextView? = null
+    private var btnRestart: Button? = null
     private var points = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,8 +21,10 @@ class ResultActivity : AppCompatActivity() {
         txtViewPercentage = findViewById(R.id.textViewPercentage)
         txtViewDescription = findViewById(R.id.textViewDescription)
         txtViewBullyingLevel = findViewById(R.id.textViewBullyingLevel)
+        btnRestart = findViewById(R.id.buttonRestart)
         givePoints(points)
         description(points)
+        btnRestart!!.setOnClickListener(this)
     }
     fun givePoints(points: Int): Int {
         this.points = intent.getIntExtra("totalPoint",0)
@@ -51,5 +58,13 @@ class ResultActivity : AppCompatActivity() {
             in 75..100 ->
                 txtViewBullyingLevel?.text = "Bullying Grave"
         }
+    }
+    override fun onClick(v: View?) {
+        val intent = Intent(this, MainActivity::class.java)
+        when(v!!.id){
+            R.id.buttonRestart ->
+                    startActivity(intent)
+        }
+
     }
 }
